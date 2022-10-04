@@ -1,0 +1,51 @@
+body {
+  background: var(--dark-color);
+}
+
+main #container {
+  margin: 4rem auto 4rem auto;
+}
+
+.panel-content a{
+  color: rgb(67, 252, 110);
+  display: inline-block;
+  padding: 0.25rem;
+}
+
+.panel-content a:hover {
+  border: 1px solid rgb(67, 252, 110) ;
+  border-radius: 5px;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.panel-content a span{
+  animation: blinker 0.5s linear infinite;
+}
+
+footer {
+  display: grid;
+  justify-items: center;
+  color: white;
+}
+footer p {
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+footer ul li a i{
+  color: white;
+  font-size: 1.5rem;
+}
+
+footer ul li a i:hover {
+  color: rgb(67, 252, 110) ;
+}
