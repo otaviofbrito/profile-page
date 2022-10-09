@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Otavio Brito" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity=""
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+    </style>
+    <!--STYLES-->
+    <link rel="stylesheet" href="/public/style/pages/projects.css" />
+    <link rel="stylesheet" href="/public/style/partials/cards.css" />
+    <link rel="stylesheet" href="/public/style//partials/m2.css" />
+    <link rel="stylesheet" href="/public/style/partials/button.css" />
+    <link rel="stylesheet" href="/public/style/partials/scrollbar.css" />
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="/public/img/assets/fonts/style.css" />
+
+    <link
+      rel="shortcut icon"
+      href="/public/img/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Otavio Brito | Projects</title>
+  </head>
+
+  <body>
+    <section>
+      <div class="container" id="home">
+        <a href="/index.html" class="button_rd button_back">< back</a>
+        <header>
+          <h2>Projects</h2>
+        </header>
+        <div class="tool_selection">
+          <ul>
+            <li class="tool_list" data-filter="all">All</li>
+            <li class="tool_list" data-filter=".HTML">
+              <i class="icon-HTML"></i>
+            </li>
+            <li class="tool_list" data-filter=".JavaScript">
+              <i class="icon-JavaScript"></i>
+            </li>
+            <li class="tool_list" data-filter=".TypeScript">
+              <i class="icon-TypeScript"></i>
+            </li>
+            <li class="tool_list" data-filter=".Python">
+              <i class="icon-Python"></i>
+            </li>
+            <li class="tool_list" data-filter=".C"><i class="icon-C"></i></li>
+            <li class="tool_list" data-filter=".Csharp">
+              <i class="icon-Csharp"></i>
+            </li>
+            <li class="tool_list" data-filter=".Cplusplus">
+              <i class="icon-Cplusplus"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="cards" id="card_container">
+          <!-- JS-INJECTION -->
+        </div>
+      </div>
+    </section>
+
+    <!--scroll top-->
+    <a href="#" class="back-to-top"><i class="icon-chevron-left"></i></a>
+
+    <script src="/public/scripts/project.js"></script>
+    <script src="/public/scripts/scrollLogic.js"></script>
+    <!--filterSCRIPT-->
+    <script src="/public/scripts/mixitup.min.js"></script>
+  </body>
+</html>

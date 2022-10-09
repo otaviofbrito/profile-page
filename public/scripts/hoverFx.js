@@ -7,7 +7,7 @@ myPanel.onmouseleave = handleMouseLeave;
 
 let mouseX, mouseY;
 
-let transformAmount = 5;
+let transformAmount = 1;
 
 function transformPanel(mouseEvent) {
     mouseX = mouseEvent.pageX;

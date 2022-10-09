@@ -1,9 +1,20 @@
+
+body {background: black;}
+canvas
+ {display:block;
+  position: relative;
+  z-index: -99;
+  }
+
 body {
   background: var(--dark-color);
+  
 }
 
 main #container {
-  margin: 4rem auto 4rem auto;
+  margin: auto;
+  position: absolute;
+  z-index: 100;
 }
 
 .panel-content a{
@@ -17,6 +28,23 @@ main #container {
   border-radius: 5px;
 }
 
+.panel-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel-info {
+  display: grid;
+  gap: 3rem;
+  justify-items: center;
+}
+
+.panel-info .menu-opt{
+  display: grid;
+  justify-items: center;
+  gap: 0.25rem;
+}
 @keyframes blinker {
   50% {
     opacity: 0;
@@ -26,26 +54,8 @@ main #container {
   animation: blinker 0.5s linear infinite;
 }
 
-footer {
-  display: grid;
-  justify-items: center;
-  color: white;
-}
-footer p {
-  margin-bottom: 1rem;
-}
-
-footer ul {
+.social ul {
   display: flex;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-footer ul li a i{
-  color: white;
-  font-size: 1.5rem;
-}
-
-footer ul li a i:hover {
-  color: rgb(67, 252, 110) ;
+  gap: 0.5rem;
+  font-size: 1.25rem;
 }

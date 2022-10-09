@@ -1,0 +1,78 @@
+
+section {
+  justify-content: center;
+  margin: auto;
+  margin-top: 4rem;
+}
+.container{
+  max-width: 1120px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.tool_selection ul li {
+  list-style: none;
+}
+
+.tool_selection ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+header {
+  max-width: 500px;
+  margin: auto;
+}
+header h2 {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+
+
+/*TOOL SELECTION*/
+.tool_selection ul li:first-child{
+  color: var(--social-title-color);
+}
+.tool_selection ul li.mixitup-control-active:first-child{
+  color: var(--social-hover-color);
+}
+.tool_selection{
+  font-size: 1rem;
+  width: fit-content;
+  margin: auto auto 2rem auto;
+
+  padding: 18px;
+  background: rgba(45, 50, 46, 0.3);
+  border-radius: 2rem;
+  backdrop-filter: blur(10px);
+}
+.tool_selection.scroll{
+  position: sticky;
+  top: 1rem;
+  z-index: 100;
+}
+.tool_selection ul li {
+  transition: 0.15s;
+  cursor: pointer;
+}
+.tool_selection ul li:hover {
+  color: var(--social-hover-color);
+}
+
+.tool_selection ul li.mixitup-control-active i{
+  background: var(--social-hover-color);
+  color: var(--background-color);
+  padding: 3px;
+  border-radius: 0.5rem;
+  }
+.tool_selection ul li.mixitup-control-active{
+    transform: scale(1.2);
+  }
+
+  .tool_selection ul li i::before{
+    margin-left: 2px;
+  }
+  
+
+

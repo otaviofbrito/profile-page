@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+:root {
+  font-size: 80%;
+
+  /*VAR COLORS*/
+  --background-color: #121214;
+  --text-light-color: #FFFFFF;
+  --gradient-color-1: -webkit-gradient(linear, left top, left bottom, from(135deg), color-stop(rgb(67, 252, 110)), to(#009ae1));
+  --gradient-color-2: -webkit-linear-gradient(135deg, rgb(67, 252, 110), #FF008E);
+  --gradient-color-3: linear-gradient(135deg, rgb(67, 252, 110), #005eff);
+  --social-hover-color: rgb(67, 252, 110);
+  --social-title-color: #42434B;
+
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-light-color);
+  font: 500 1.5rem Fira Code, monospace;
+  letter-spacing: .2rem;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*MEDIA QUERIES*/
+/*INDEX*/
+@media (min-width: 350px) {
+  .container .profile-title{
+    font-size: 1rem;
+  }
+  .container .profile-subtitle{
+    font-size: 0.75rem;
+  }
+  .container .profile-image{
+    width: 150px;
+    height: 150px;
+  }
+  .menu {
+    margin: 2rem auto 2rem auto;
+  }
+  .button_rd {
+    font-size: 1rem;
+  }
+  .container .social-title {
+    font-size: 1rem;
+  }
+  .footer {
+    font-size: 0.6rem;
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .container .profile-title{
+    font-size: 2.25rem;
+  }
+  .container .profile-subtitle{
+    font-size: 1rem;
+  }
+  .container .profile-image{
+    width: 250px;
+    height: 250px;
+  }
+  .menu {
+    margin: 2rem auto 2rem auto;
+  }
+  .button_rd {
+    font-size: 1rem;
+  }
+  .container .social-title {
+    font-size: 1rem;
+  }
+  
+  .footer {
+    font-size: 0.9rem;
+    margin-top: 5rem;
+  }
+}
+/*PROJECTS*/
