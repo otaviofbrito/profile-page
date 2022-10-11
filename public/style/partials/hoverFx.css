@@ -22,11 +22,12 @@ html, body {
 #panel-container {
 	position: absolute;
 	background-size: cover;
-	background: url(/public/img/monitor-screen.gif) center top;
+	background: rgba(0, 0, 0, 0.289) center top;
+	backdrop-filter: blur(2px);
 	transform: perspective(400px) rotateX(0deg) rotateY(0deg);
 	transform-style: preserve-3d;
-	box-shadow: 0 -3.5rem 5rem 3rem rgba(62, 125, 243, 0.268);
-	border-radius: 1rem;
+	box-shadow: 0 0 5rem 0.5rem rgba(4, 140, 115, 0.268);
+	border-radius: 0.5rem;
 	display: grid;
 }
 
@@ -39,5 +40,3 @@ html, body {
 	overflow-wrap: break-word;
 }
 
-.panel-content .panel-info{
-	margin-bottom: 5rem;}
